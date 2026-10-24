@@ -79,7 +79,7 @@ a {
 html {
   scroll-behavior: smooth;
   /* sections stop below the sticky nav instead of under it */
-  scroll-padding-top: calc(var(--nav-height) + var(--bar-height) + 12px);
+  scroll-padding-top: calc(var(--nav-height) + 12px);
 }
 
 body {
