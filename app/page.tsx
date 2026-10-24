@@ -11,9 +11,28 @@
 // }
 
 
+// import EcosystemBar from "@/components/EcosystemBar/EcosystemBar";
+// import Navbar from "@/components/Navbar/Navbar";
+// import Hero from "@/components/Hero/Hero";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <EcosystemBar />
+//       <Navbar />
+//       <main>
+//         <Hero />
+//       </main>
+//     </>
+//   );
+// }
+
+
 import EcosystemBar from "@/components/EcosystemBar/EcosystemBar";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
+import TwinDisciplines from "@/components/TwinDisciplines/TwinDisciplines";
+import DesignServices from "@/components/DesignServices/DesignServices";
 
 export default function Home() {
   return (
@@ -22,6 +41,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <TwinDisciplines />
+        <DesignServices />
       </main>
     </>
   );
