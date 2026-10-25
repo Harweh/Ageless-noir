@@ -1,0 +1,10 @@
+.box {
+  max-width: 840px; margin: 0 auto; padding: 56px 32px; text-align: center; border-radius: 20px;
+  background: radial-gradient(500px 200px at 50% 0%, rgba(184, 151, 90, 0.08), transparent 70%), var(--surface);
+}
+.icon { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-bottom: 20px; border-radius: 12px; border: 1px solid var(--border); background: rgba(184, 151, 90, 0.08); color: var(--gold); }
+.title { font-size: clamp(1.8rem, 3.4vw, 2.4rem); margin-bottom: 14px; }
+.text { max-width: 52ch; margin: 0 auto 26px; font-size: 14px; color: var(--text-muted); }
+.note { margin-top: 20px; font-family: var(--font-label); font-size: 10px; color: var(--text-muted); }
+
+@media (max-width: 640px) { .box { padding: 40px 20px; } }

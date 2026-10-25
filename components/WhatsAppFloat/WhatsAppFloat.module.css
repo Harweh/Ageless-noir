@@ -1,0 +1,7 @@
+.fab {
+  position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 60;
+  display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%;
+  background: var(--whatsapp); color: #fff; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  transition: transform 0.15s ease;
+}
+.fab:hover { transform: scale(1.08); }

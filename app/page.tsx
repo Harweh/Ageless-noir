@@ -28,11 +28,40 @@
 // }
 
 
+// import EcosystemBar from "@/components/EcosystemBar/EcosystemBar";
+// import Navbar from "@/components/Navbar/Navbar";
+// import Hero from "@/components/Hero/Hero";
+// import TwinDisciplines from "@/components/TwinDisciplines/TwinDisciplines";
+// import DesignServices from "@/components/DesignServices/DesignServices";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <EcosystemBar />
+//       <Navbar />
+//       <main>
+//         <Hero />
+//         <TwinDisciplines />
+//         <DesignServices />
+//       </main>
+//     </>
+//   );
+// }
+
+
 import EcosystemBar from "@/components/EcosystemBar/EcosystemBar";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import TwinDisciplines from "@/components/TwinDisciplines/TwinDisciplines";
 import DesignServices from "@/components/DesignServices/DesignServices";
+import ScentCollection from "@/components/ScentCollection/ScentCollection";
+import BeforeAfter from "@/components/BeforeAfter/BeforeAfter";
+import Process from "@/components/Process/Process";
+import RealEstate from "@/components/RealEstate/RealEstate";
+import EcosystemServices from "@/components/EcosystemServices/EcosystemServices";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import Footer from "@/components/Footer/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -43,7 +72,15 @@ export default function Home() {
         <Hero />
         <TwinDisciplines />
         <DesignServices />
+        <ScentCollection />
+        <BeforeAfter />
+        <Process />
+        <RealEstate />
+        <EcosystemServices />
+        <FinalCTA />
       </main>
+      <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

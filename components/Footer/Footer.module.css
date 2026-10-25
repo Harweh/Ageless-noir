@@ -1,0 +1,20 @@
+.footer { margin-top: 40px; padding-top: 56px; background: #0e0e0e; border-top: 1px solid var(--border); }
+.grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; }
+
+.brand { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.monogram { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold); font-family: var(--font-heading); font-size: 11px; }
+.name { font-family: var(--font-heading); font-size: 14px; letter-spacing: 0.26em; text-transform: uppercase; }
+.blurb { max-width: 36ch; margin-bottom: 14px; font-size: 12px; color: var(--text-muted); }
+.member { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-label); font-size: 10px; color: var(--gold); }
+.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+
+.colTitle { margin-bottom: 16px; font-family: var(--font-label); font-variant: normal; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 12px; color: var(--text-muted); }
+.list a:hover { color: var(--gold); }
+
+.bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-block: 20px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text-muted); }
+.legal { display: flex; flex-wrap: wrap; gap: 20px; }
+.legal a:hover { color: var(--gold); }
+
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .grid { grid-template-columns: 1fr; gap: 28px; } }
