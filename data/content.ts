@@ -107,3 +107,49 @@ export const ecosystemServices = [
   { name: "EmpowrX Foundation", category: "Social Impact & Artisans", cta: "Learn About The Mission",
     text: "Empowering next-gen Nigerian interior craftsmen, scent artisans, and young carpentry apprentices with sustainable living wages." },
 ];
+
+export type ComparePanel = {
+  kind: "before" | "after";
+  label: string;
+  note: string;
+  image: string;
+  alt: string;
+  caption: string;
+  badge?: string;
+};
+
+export const beforeAfter: ComparePanel[] = [
+  {
+    kind: "before",
+    label: "Before • Raw Builder Shell",
+    note: "Zero Character • Harsh Fluorescents",
+    image: "/images/before.jpg",
+    alt: "Empty apartment shell with white distemper walls and fluorescent lighting",
+    caption: "BASELINE: White distemper walls, glare tiles, no acoustic damping.",
+  },
+  {
+    kind: "after",
+    label: "After • Ageless Noir Sanctuary",
+    note: "+120% Rental Valuation",
+    image: "/images/after.jpg",
+    alt: "Finished sanctuary with charcoal limewash walls and fluted brass shelving",
+    caption: "HANDOVER: Charcoal limewash, fluted brass shelving, cove illumination.",
+    badge: "Verified",
+  },
+];
+
+export const footerData = {
+  blurb:
+    "Atmospheric Lagos interior design, architectural space revamps, hand-poured botanical candles, and luxury real estate advisory.",
+  navigation: [
+    { label: "Twin Disciplines", href: "#disciplines" },
+    { label: "Interior Design Services", href: "#services" },
+    { label: "Artisanal Scent Cellar", href: "#scents" },
+    { label: "Before & After Showcase", href: "#before-after" },
+    { label: "Curated Real Estate", href: "#real-estate" },
+  ],
+  sister: ["EmpowrX Parent Hub", "Glifix × Predict Atelier", "Frutica", "Yummy Shakara Bites", "Anushae"],
+  address: "Lekki Phase 1 & Ikoyi, Lagos, Nigeria",
+  phone: "+234 800 000 0000",
+  legal: ["Sister Brands", "Governance", "Privacy Policy"],
+};

@@ -1,4 +1,4 @@
-    .nav {
+    /* .nav {
     position: sticky;
     top: 0;
     z-index: 50;
@@ -81,4 +81,83 @@
     .links, .cta { display: none; }
     .toggle { display: grid; }
     .panelOpen { display: flex; }
-    }
+    } */
+
+
+
+    .nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(20, 20, 20, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.inner { display: flex; align-items: center; gap: 24px; height: var(--nav-height); }
+
+.brand { display: flex; align-items: center; gap: 12px; margin-right: auto; }
+.monogram {
+  display: grid; place-items: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid var(--gold); color: var(--gold);
+  font-family: var(--font-heading); font-size: 13px; letter-spacing: 0.05em;
+}
+.name {
+  display: block; white-space: nowrap;
+  font-family: var(--font-heading); font-size: 17px;
+  letter-spacing: 0.26em; text-transform: uppercase; line-height: 1.1;
+}
+.tagline {
+  display: block; max-width: 150px;
+  font-family: var(--font-label); font-size: 8px; line-height: 1.4;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted);
+}
+
+.links { display: flex; gap: 22px; }
+.links a {
+  white-space: nowrap;
+  font-family: var(--font-label); font-size: 10px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text-muted); transition: color 0.15s ease;
+}
+.links a:hover { color: var(--gold); }
+
+.inner .cta { white-space: nowrap; min-height: 40px; padding: 0 20px; font-size: 12px; }
+
+.toggle {
+  display: none; place-items: center;
+  width: 44px; height: 44px; background: none;
+  border: 1px solid var(--border); border-radius: 10px; color: var(--text);
+}
+
+/* dropdown panel: sits directly under the navbar */
+.nav .panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 18px 24px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.55);
+  max-height: calc(100vh - var(--nav-height));
+  overflow-y: auto;
+}
+
+@media (min-width: 1181px) {
+  .nav .panel { display: none; }
+}
+.panelLink {
+  padding: 14px 4px;
+  font-family: var(--font-label); font-size: 12px; letter-spacing: 0.16em;
+  text-transform: uppercase; border-bottom: 1px solid var(--border);
+}
+.panel .panelCta { margin-top: 12px; }
+
+@media (max-width: 1180px) {
+  .links, .inner .cta { display: none; }
+  .toggle { display: grid; }
+  .panelOpen { display: flex; }
+}

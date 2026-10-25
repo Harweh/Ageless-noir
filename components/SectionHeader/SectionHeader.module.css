@@ -1,8 +1,10 @@
     .header { margin-bottom: 40px; }
-    .header .eyebrow { margin-bottom: 10px; }
+    /* .header .eyebrow { margin-bottom: 10px; } */
+    .header :global(.eyebrow) { margin-bottom: 10px; }
 
     .center { text-align: center; }
-    .center .section-sub { margin-inline: auto; }
+    /* .center .section-sub { margin-inline: auto; } */
+    .center :global(.section-sub) { margin-inline: auto; max-width: 560px; }
 
     .split {
     display: flex;
