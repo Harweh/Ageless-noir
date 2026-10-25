@@ -56,9 +56,9 @@ import TwinDisciplines from "@/components/TwinDisciplines/TwinDisciplines";
 import DesignServices from "@/components/DesignServices/DesignServices";
 import ScentCollection from "@/components/ScentCollection/ScentCollection";
 import BeforeAfter from "@/components/BeforeAfter/BeforeAfter";
-import Process from "@/components/Process/Process";
-import RealEstate from "@/components/RealEstate/RealEstate";
-import EcosystemServices from "@/components/EcosystemServices/EcosystemServices";
+// import Process from "@/components/Process/Process";
+// import RealEstate from "@/components/RealEstate/RealEstate";
+// import EcosystemServices from "@/components/EcosystemServices/EcosystemServices";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Footer from "@/components/Footer/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat/WhatsAppFloat";
@@ -74,9 +74,9 @@ export default function Home() {
         <DesignServices />
         <ScentCollection />
         <BeforeAfter />
-        <Process />
+        {/* <Process />
         <RealEstate />
-        <EcosystemServices />
+        <EcosystemServices /> */}
         <FinalCTA />
       </main>
       <Footer />
