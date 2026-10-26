@@ -46,9 +46,11 @@
     aspect-ratio: 4 / 3.4;
     border-radius: 18px;
     overflow: hidden;
-    border: 1px solid var(--border);
+    border: 1.5px solid rgba(184, 151, 90, 0.6);
     background: var(--surface);
+    box-shadow: 0 0 0 1px rgba(184, 151, 90, 0.08), 0 24px 60px rgba(0, 0, 0, 0.5);
     }
+
     .img { object-fit: cover; }
     .caption {
     position: absolute;
